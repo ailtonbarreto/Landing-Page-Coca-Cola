@@ -155,7 +155,7 @@ header .navegation li a{
 }
 
 .boximg img{
-    width: 300px;
+    width: 23vh;
 }
 
 .boximg .img1{
@@ -174,7 +174,7 @@ header .navegation li a{
     transform: rotate(-15deg);
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 24vh){
     .boximg{
         display: none;
     }
