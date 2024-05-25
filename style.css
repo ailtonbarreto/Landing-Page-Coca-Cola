@@ -174,7 +174,7 @@ header .navegation li a{
     transform: rotate(-15deg);
 }
 
-@media screen and (max-width: 24vh){
+@media screen and (max-width: 1323){
     .boximg{
         display: none;
     }
