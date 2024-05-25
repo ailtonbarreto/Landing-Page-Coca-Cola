@@ -195,11 +195,6 @@ header .navegation li a{
     }
 
     header{
-        position: relative;
-        display: inline;
-        top: 0;
-        left: 0;
-        align-items: center;
-        
+        display: none;  
     }
 }
