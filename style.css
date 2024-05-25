@@ -61,6 +61,7 @@ header .navegation li a{
     font-size: 19px;
     margin-left: 100px;
 }
+
 .container{
     position: relative;
     width: 100%;
@@ -177,5 +178,28 @@ header .navegation li a{
 @media screen and (max-width: 1323px){
     .boximg{
         display: none;
+    }
+
+    .circle{
+        display: none;
+    }
+
+    .container{
+        text-align: center;
+    }
+    
+    .container .text h2 span{
+        font-size: 3.5em;
+        color: #e51e2a;
+        text-align: center;
+    }
+
+    header{
+        position: relative;
+        display: inline;
+        top: 0;
+        left: 0;
+        align-items: center;
+        
     }
 }
