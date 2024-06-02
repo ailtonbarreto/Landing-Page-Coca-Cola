@@ -146,12 +146,22 @@ header{
 
 .second-section{
     display: flex;
-    margin-top: 5%;
 }
 
+.textohome2{
+    font-size: 80pt;
+    position: relative;
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: 300;
+    display: flex;
+    padding-top: 5%;
+    justify-content: center;
+    text-align: center;
+}
 
 .circulo2{
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 14%;
     display: flex;
     border-radius: 50%;
