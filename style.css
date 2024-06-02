@@ -2,19 +2,29 @@
     --cor-principal: #E71F33;
     --cor-branco: #ffffff;
     --cor-bg: #000000;
+    --fonte-tamanho: 15pt;
+    --card-color: #313131;
+}
+
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('Fonts\LeagueSpartan-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 *{
     margin: o;
     padding: 0;
     box-sizing: border-box;
+    font-family: url('Fonts\LeagueSpartan-Medium.ttf') format('truetype');
 }
 
 body{
-    background-image: url(./IMG/image-bg.png);
-    background-size: cover;
+    background-color: var(--cor-bg);
     margin-left: 3%;
     margin-right: 3%;
+    font-family: 'LeagueSpartan', sans-serif;
 }
 
 
@@ -23,10 +33,11 @@ header{
     justify-content: space-between;
     padding-top: 10px;
     align-items: center;
+    background-color: var(--cor-bg);
 }
 
 .logo{
-    width: 150px;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -34,14 +45,19 @@ header{
 .navegation ul{
     display: flex;
     justify-content: space-between;
-    gap: 30%;
+    gap: 20%;
     list-style: none;
+    width: 100%;
 }
 
 .navegation ul li a{
     text-decoration: none;
     color: var(--cor-branco);
-    font-size: 20px;
+    font-size: 15pt;
+}
+
+.navegation ul li a:hover{
+    color: var(--cor-principal);
 }
 
 .cadastro{
@@ -54,6 +70,11 @@ header{
 .cadastre-se{
     text-decoration: none;
     color: var(--cor-branco);
+    font-size: var(--fonte-tamanho);
+}
+
+.cadastre-se:hover{
+    color: var(--cor-principal);
 }
 
 .btn-login{
@@ -62,16 +83,113 @@ header{
     border-radius: 10px;
     background-color: var(--cor-principal);
     color: var(--cor-branco);
+    font-size: var(--fonte-tamanho);
 }
 
-.cards-home{
+.btn-login:hover{
+    background-color : var(--cor-branco);
+    color: var(--cor-principal);
+}
+
+.textohome1{
+    font-size: 80pt;
     position: relative;
-    padding-top: 5%;
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: 300;
     display: flex;
+    padding-top: 5%;
     justify-content: center;
+    text-align: center;
 }
 
-.cards-home img{
+.first-section{
+    display: flex;
+    margin-top: 5%;
+}
+
+.circulo1{
+    margin-top: 10%;
+    display: flex;
+    border-radius: 50%;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor-branco);
+    background-color: var(--cor-principal);
+}
+
+.circulo1 .texto1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+    font-size: 17pt;
+    margin-bottom: 40px;
+    line-height: 30pt;
+}
+
+.garrafa{
     position: relative;
     width: 70%;
+    margin-top: 5%;
+    margin-left: -7%;
+    display: flex;
+    background-color: var(--card-color);
+    border-radius: 15px;
+    padding: 40px;
+    opacity: 0.8;
+}
+
+.second-section{
+    display: flex;
+    margin-top: 5%;
+}
+
+
+.circulo2{
+    margin-top: 10%;
+    margin-left: 14%;
+    display: flex;
+    border-radius: 50%;
+    position: relative;
+    width: 800px;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor-branco);
+    background-color: var(--cor-principal);
+}
+
+.circulo2 .texto2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+    font-size: 17pt;
+    margin-bottom: 40px;
+    line-height: 30pt;
+}
+
+.latasprinte{
+    position: relative;
+    width: 70%;
+    margin-top: 50%;
+    margin-left: 60%;
+    display: flex;
+    background-color: var(--card-color);
+    border-radius: 15px;
+    padding: 40px;
+    opacity: 0.8;
+    z-index: 8;
+}
+
+.lata-abrindo{
+    display: flex;
+    justify-content: center;
+    width: 90%;
 }
