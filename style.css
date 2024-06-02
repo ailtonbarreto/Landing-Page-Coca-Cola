@@ -162,12 +162,12 @@ header{
 
 .circulo2{
     margin-top: 5%;
-    margin-left: 14%;
+    margin-left: 0;
     display: flex;
     border-radius: 50%;
     position: relative;
-    width: 800px;
-    height: 800px;
+    width: 750px;
+    height: 750px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -180,7 +180,7 @@ header{
     text-align: center;
     align-items: center;
     margin-top: 0;
-    font-size: 17pt;
+    font-size: 16pt;
     margin-bottom: 40px;
     line-height: 30pt;
 }
@@ -189,7 +189,7 @@ header{
     position: relative;
     width: 70%;
     margin-top: 50%;
-    margin-left: 60%;
+    margin-left: 9%;
     display: flex;
     background-color: var(--card-color);
     border-radius: 15px;
