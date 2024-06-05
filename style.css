@@ -1,8 +1,8 @@
 :root{
-    --cor-principal: #E71F33;
+    --cor-principal: #DE0B1C;
     --cor-branco: #ffffff;
     --cor-bg: #000000;
-    --fonte-tamanho: 15pt;
+    --fonte-tamanho: 100%;
     --card-color: #313131;
 }
 
@@ -77,12 +77,12 @@ header {
 
 .cadastre-se{
     text-decoration: none;
-    color: var(--cor-branco);
+    color: var(--cor-principal);
     font-size: var(--fonte-tamanho);
 }
 
 .cadastre-se:hover{
-    color: var(--cor-principal);
+    color: var(--cor-branco);
 }
 
 .btn-login{
@@ -118,7 +118,7 @@ header {
     display: flex;
     margin-top: 5%;
     justify-content: center;
-    gap: 10px;
+    gap: 5%;
 }
 
 .circulo1{
@@ -150,9 +150,9 @@ header {
 
 .card-garrafa{
     position: relative;
-    width: 24%;
-    height: 30%;
-    margin-top: -2%;
+    width: 20%;
+    height: 10%;
+    margin-top: 5%;
     margin-left: -2%;
     display: flex;
     justify-content:center;
@@ -162,9 +162,6 @@ header {
     opacity: 0.8;
 }
 
-.card-garrafa:hover{
-    background-color: var(--cor-branco);
-}
 
 .textogarrafa{
     position: absolute;
@@ -184,7 +181,7 @@ header {
 .second-section{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 5%;
 }
 
 .textohome2{
@@ -227,8 +224,8 @@ header {
 
 .card-sprite{
     position: relative;
-    width: 30%;
-    height: 5%;
+    width: 20%;
+    height: 10%;
     margin-top: 5%;
     margin-left: -2%;
     display: flex;
@@ -255,3 +252,81 @@ header {
     font-size: var(--fonte-tamanho);
 }
 
+.faixa{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.faixacoca{
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+
+.textohome3{
+    font-size: 80pt;
+    position: relative;
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: 300;
+    display: flex;
+    padding-top: 5%;
+    justify-content: center;
+    text-align: center;
+}
+
+.grupocard{
+    display: flex;
+    justify-content: center;
+}
+
+.grupo{
+    margin-top: 5%;
+    width: 60%;
+}
+
+.textohome4{
+    font-size: 80pt;
+    position: relative;
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: 300;
+    display: flex;
+    padding-top: 5%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.third-section{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.circulo3{
+    margin-top: 5%;
+    margin-left: -50%;
+    display: flex;
+    border-radius: 50%;
+    position: relative;
+    width: 550px;
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor-branco);
+    background-color: var(--cor-principal);
+}
+
+.circulo3 .texto3{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+    font-size: 12pt;
+    margin-bottom: 40px;
+    line-height: 20pt;
+    font-weight: bold;
+}
