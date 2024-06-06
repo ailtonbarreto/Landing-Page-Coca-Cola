@@ -22,8 +22,8 @@
 
 body{
     background-color: var(--cor-bg);
-    margin-top: 0;
     font-family: 'LeagueSpartan', sans-serif;
+    margin: 0;
 }
 
 
@@ -33,11 +33,10 @@ header {
     align-items: center;
     width: 100%;
     padding: 20px;
-    gap: 10%;
     background-color: var(--cor-bg);
     z-index: 90;
     position: fixed;
-    top: 0;
+    margin-top: 0;
 }
 
 
@@ -72,7 +71,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 10px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .cadastre-se{
@@ -120,24 +119,41 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
-    gap: 3%;
+    flex-wrap: wrap;
 }
 
-.cards-produto1{
+.card-produto{
     background-color: var(--card-color);
     border-radius: 15px;
-    opacity: 0.8;
+    opacity: 0.9;
+    z-index: 10;
+    margin: 1%;
 }
 
-.cards-produto2{
-    background-color: var(--card-color);
-    border-radius: 15px;
-    opacity: 0.8;
+
+.textohome2{
+    font-size: 80pt;
+    position: relative;
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: 300;
+    display: flex;
+    padding-top: 5%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
-.cards-produto3{
-    background-color: var(--card-color);
-    border-radius: 15px;
-    opacity: 0.8;
+.forma1{
+    position: fixed;
+    display:block;
+    justify-content: left;
+    margin-left: -15%;
+    background-color: var(--cor-principal);
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    z-index: 0;
 }
