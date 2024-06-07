@@ -3,6 +3,7 @@
     --cor-branco: #ffffff;
     --cor-bg: #000000;
     --fonte-tamanho: 100%;
+    --font-tamanho-cards: 100%;
     --card-color: #313131;
 }
 
@@ -125,6 +126,9 @@ header {
 }
 
 .card-produto{
+    width: 20%;
+    display: block;
+    align-items: center;
     background-color: var(--card-color);
     border-radius: 15px;
     opacity: 0.9;
@@ -132,6 +136,19 @@ header {
     margin: 1%;
 }
 
+p{
+    color: var(--cor-branco);
+    font-weight: 700;
+    font-size: var(--font-tamanho-cards);
+    text-align: center;
+}
+
+.card-produto img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;    
+}
 
 .textohome2{
     font-size: 80pt;
@@ -156,4 +173,13 @@ header {
     height: 700px;
     border-radius: 50%;
     z-index: 0;
+}
+
+.second-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
 }
