@@ -33,7 +33,7 @@ header {
     justify-content:space-around;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 2%;
     background-color: var(--cor-bg);
     z-index: 90;
     position: fixed;
@@ -42,7 +42,7 @@ header {
 
 
 .logo{
-    width: 150px;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,6 +53,7 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 25%;
+    margin: 0 auto;
     list-style: none;
 }
 
@@ -68,15 +69,16 @@ header {
 }
 
 .cadastro{
+    width: 20%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 10px;
-    gap: 20px;
 }
 
 .cadastre-se{
+    display: flex;
     text-decoration: none;
+    padding: 10%;
     color: var(--cor-principal);
     font-size: var(--fonte-tamanho);
 }
@@ -87,14 +89,15 @@ header {
 
 .btn-login{
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     background-color: var(--cor-principal);
     color: var(--cor-branco);
-    font-size: 14pt;
-    text-align: center;
-    padding: 8px;
-    width: 100px;
-    height: 40px;
+    font-size: var(--fonte-tamanho);
+    width: 40%;
+    height: 5vh;
 }
 
 .btn-login:hover{
@@ -102,9 +105,8 @@ header {
     color: var(--cor-principal);
 }
 
-
 .textohome1{
-    font-size: 80pt;
+    font-size: 14vh;
     position: relative;
     color: var(--cor-principal);
     text-decoration: none;
@@ -114,6 +116,16 @@ header {
     justify-content: center;
     text-align: center;
     margin-bottom: 5%;
+}
+
+.circulo1{
+    position: fixed;
+    top: 60vh;
+    margin-left: -15%;
+}
+
+.circulo1 img{
+    width: 80vh;
 }
 
 .first-section{
@@ -141,6 +153,14 @@ p{
     font-weight: 700;
     font-size: var(--font-tamanho-cards);
     text-align: center;
+    padding: 2%;
+}
+
+.preco{
+    color: var(--cor-branco);
+    text-align: left;
+    margin-left: 5%;
+    font-size: var(--fonte-tamanho);
 }
 
 .card-produto img{
@@ -151,7 +171,7 @@ p{
 }
 
 .textohome2{
-    font-size: 80pt;
+    font-size: 14vh;
     position: relative;
     color: var(--cor-principal);
     text-decoration: none;
@@ -163,17 +183,6 @@ p{
     margin-bottom: 5%;
 }
 
-.forma1{
-    position: fixed;
-    display:block;
-    justify-content: left;
-    margin-left: -15%;
-    background-color: var(--cor-principal);
-    width: 700px;
-    height: 700px;
-    border-radius: 50%;
-    z-index: 0;
-}
 
 .second-section{
     width: 100%;
