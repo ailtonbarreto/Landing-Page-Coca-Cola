@@ -2,7 +2,7 @@
     --cor-principal: #DE0B1C;
     --cor-branco: #ffffff;
     --cor-bg: #000000;
-    --fonte-tamanho: 100%;
+    --fonte-tamanho: 2.5vh;
     --font-tamanho-cards: 100%;
     --card-color: #313131;
 }
@@ -45,6 +45,7 @@ header {
 .logo{
     width: 20vh;
     display: flex;
+    margin-top: 2vh;
     justify-content: center;
     align-items: center;
 }
@@ -71,9 +72,10 @@ header {
 
 .cadastro{
     width: 25vh;
+    font-size: var(--fonte-tamanho);
     display: flex;
     justify-content: space-between;
-    gap: 5px;
+    gap: 1vh;
     align-items: center;
 }
 
