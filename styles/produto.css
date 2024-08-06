@@ -203,13 +203,6 @@ p{
     z-index: 200;
 }
 
-.whats img{
-    position: fixed;
-    width: 10vh;
-    bottom: 10vh;
-    right: 2vh;
-    cursor: pointer;
-}
 
 .contatos-p{
     font-size: 4vh;
