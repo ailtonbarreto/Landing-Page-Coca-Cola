@@ -1,0 +1,15 @@
+@media screen and (max-width: 1135px) {
+    header .navegation, .cadastro{
+        display: none;
+    }
+
+    header{
+        justify-content: space-between;
+
+    }
+
+    .menu-icon{
+        display: flex;
+        /* teste */
+    }
+}
