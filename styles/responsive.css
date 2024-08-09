@@ -10,6 +10,36 @@
 
     .menu-icon{
         display: flex;
-        /* teste */
+        cursor: pointer;
+    }
+
+    .nav-mobile{
+        display: none;
+        background-color: var(--cor-branco);
+        padding: 1%;
+        text-align: center;
+
+    }
+
+    .nav-mobile li{
+        list-style: none;
+        align-items: center;
+        line-height: 170%;
+        font-weight: bold;
+    }
+
+    .navegation-mobile a{
+        text-decoration: none;
+        color: var(--cor-principal);
+        font-size: var(10pt);
+    }
+
+
+    .textohome{
+        font-size: 8vh;
+    }
+
+    .open{
+        display: block;
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,49 +9,120 @@
     <link rel="stylesheet" href="./styles/produto.css">
     <link rel="stylesheet" href="./styles/responsive.css">
 </head>
+
 <body>
     <header>
         <a href="#"><img src="IMG/logo.png" alt="logo" class="logo"></a>
         <nav>
-             <ul class="navegation">
-                 <li><a href="#">Campanhas</a></li>
+            <ul class="navegation">
+                <li><a href="#">Campanhas</a></li>
                 <li><a href="#">Produtos</a></li>
                 <li><a href="#footer">Contato</a></li>
-             </ul>
+            </ul>
         </nav>
-        <img class="menu-icon" src="./IMG/menu-icon.png" alt="">
-            <div class="cadastro">
-                <a href="#" class="cadastre-se">Cadastra-se</a>
-                <a href="#" class="btn-login">Login</a>
-            </div>
+        <img class="menu-icon" onclick="menuShow()" src="./IMG/menu-icon.png" alt="">
+        <div class="cadastro">
+            <a href="#" class="cadastre-se">Cadastra-se</a>
+            <a href="#" class="btn-login">Login</a>
+        </div>
     </header>
+    <div class="nav-mobile">
+        <ul class="navegation-mobile">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Campanhas</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#footer">Contato</a></li>
+        </ul>
+    </div>
     <div>
-        <a class="textohome1"><span>BEST SELLERS</span></a>
+        <a class="textohome"><span>BEST SELLERS</span></a>
     </div>
     <div class="circulo1"><img src="./IMG/circulo.png" alt="circulo"></div>
     <section class="first-section">
-        <figure class="card-produto"><p>Coca-Cola Lata Original 350ML</p><img src="./IMG/products/Coca Cola Original - Lata 350ml.png" alt="Coca Lata Original"><p class="preco">Preço: R$ 0,00</p></figure>
-        <figure class="card-produto"><p>Guaraná Kuat Lata 350ML</p><img src="./IMG/products/Guaraná Kuat -Lata 350ml.png" alt="Guaraná Kuat Lata 350ML"> <p class="preco">Preço: R$ 0,00</p></figure>
-        <figure class="card-produto"><p>Coca-Cola Pet Original 600ML</p><img src="./IMG/products/Coca Cola Original - Pet 600ml.png" alt="Coca-Cola Pet Original 600ML"><p class="preco">Preço: R$ 0,00</p></figure>
-        <figure class="card-produto"><p>Sprite Lata 350ML</p><img src="./IMG/products/Sprite- Lata 350ml.png" alt="Coca-Cola Pet Zero 600ML"><p class="preco">Preço: R$ 0,00</p></figure>
-        <figure class="card-produto"><p>Coca-Cola Lata Zero 350ML</p><img src="./IMG/products/Coca Cola Zero - Lata 350ml.png" alt="Coca-Cola Lata Zero 350ML"><p class="preco">Preço: R$ 0,00</p></figure>
-        <figure class="card-produto"><p>Fanta Uva Lata 350ML</p><img src="./IMG/products/Fanta Uva Lata- 350ml.png" alt="Uva"><p class="preco">Preço: R$ 0,00</p></figure>
-        <figure class="card-produto"><p>Schweppes Lata 350ML</p><img src="./IMG/products/Schweppes Citrus Original- Lata 350ml.png" alt="Schweppes Lata"><p class="preco">Preço: R$ 0,00</p></figure>
-        <figure class="card-produto"><p>Fanta Laranja Zero 350ML</p><img src="./IMG/products/Fanta Laranja Zero- Lata 350ml.png" alt="Fanta Laranja Zero 350ML"><p class="preco">Preço: R$ 0,00</p></figure>
+        <figure class="card-produto">
+            <p>Coca-Cola Lata Original 350ML</p><img src="./IMG/products/Coca Cola Original - Lata 350ml.png"
+                alt="Coca Lata Original">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
+        <figure class="card-produto">
+            <p>Guaraná Kuat Lata 350ML</p><img src="./IMG/products/Guaraná Kuat -Lata 350ml.png"
+                alt="Guaraná Kuat Lata 350ML">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
+        <figure class="card-produto">
+            <p>Coca-Cola Pet Original 600ML</p><img src="./IMG/products/Coca Cola Original - Pet 600ml.png"
+                alt="Coca-Cola Pet Original 600ML">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
+        <figure class="card-produto">
+            <p>Sprite Lata 350ML</p><img src="./IMG/products/Sprite- Lata 350ml.png" alt="Coca-Cola Pet Zero 600ML">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
+        <figure class="card-produto">
+            <p>Coca-Cola Lata Zero 350ML</p><img src="./IMG/products/Coca Cola Zero - Lata 350ml.png"
+                alt="Coca-Cola Lata Zero 350ML">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
+        <figure class="card-produto">
+            <p>Fanta Uva Lata 350ML</p><img src="./IMG/products/Fanta Uva Lata- 350ml.png" alt="Uva">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
+        <figure class="card-produto">
+            <p>Schweppes Lata 350ML</p><img src="./IMG/products/Schweppes Citrus Original- Lata 350ml.png"
+                alt="Schweppes Lata">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
+        <figure class="card-produto">
+            <p>Fanta Laranja Zero 350ML</p><img src="./IMG/products/Fanta Laranja Zero- Lata 350ml.png"
+                alt="Fanta Laranja Zero 350ML">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
     </section>
     <div>
-        <a class="textohome2"><span>DESTAQUES</span></a>
+        <a class="textohome"><span>DESTAQUES</span></a>
     </div>
     <div class="circulo2"><img src="./IMG/circulo.png" alt="circulo"></div>
     <section class="second-section">
-        <figure class="card-produto"><p>Guaraná Kuat Pet 600ML</p><img src="./IMG/products/Guaraná Kuat - Pet 600ml.png" alt="Guaraná Kuat Pet 600ML"><p class="preco">Preço: R$ 0,00</p></figure>
-        <figure class="card-produto"><p>Coca-Cola Pet Zero 600ML</p><img src="./IMG/products/Coca Cola Zero Pet 600ML.png" alt="Coca-Cola Pet Zero 600ML"><p class="preco">Preço: R$ 0,00</p></figure>
-        <figure class="card-produto"><p>Fanta Guaraná Lata 350ML</p><img src="./IMG/products/Fanta Guaraná Lata 350ml.png" alt="Fanta Guaraná Lata 350ML"><p class="preco">Preço: R$ 0,00</p></figure>
-        <figure class="card-produto"><p>Fanta Guaraná Zero Lata 350ML</p><img src="./IMG/products/Fanta Guaraná Zero- Lata 350ml.png" alt="Fanta Guaraná Zero Lata 350ML"><p class="preco">Preço: R$ 0,00</p></figure>
-        <figure class="card-produto"><p>Powerade Mix de Frutas 500ML</p><img src="./IMG/products/Isotônico Powerade Mix de Frutas- Pet 500ml.png" alt="Powerade Mix de Frutas 500ML"><p class="preco">Preço: R$ 0,00</p></figure>
-        <figure class="card-produto"><p>Coca-Cola Café Espresso Lata 220ML</p><img src="./IMG/products/Coca Cola Café Espresso- Lata 220ML.png" alt="Coca-Cola Café Espresso Lata 220ML"><p class="preco">Preço: R$ 0,00</p></figure>
-        <figure class="card-produto"><p>Gin Tônica Schweppes Lata 310ML</p><img src="./IMG/products/Gin Tônica Schweppes- Lata 310ml.png" alt="Schweppes Lata"><p class="preco">Preço: R$ 0,00</p></figure>
-        <figure class="card-produto"><p>Vodka & Citrus Premium Lata 310ML</p><img src="./IMG/products/Vodka & Citrus Schweppes Premium Drink- Lata 310ml.png" alt="Schweppes Lata"><p class="preco">Preço: R$ 0,00</p></figure>
+        <figure class="card-produto">
+            <p>Guaraná Kuat Pet 600ML</p><img src="./IMG/products/Guaraná Kuat - Pet 600ml.png"
+                alt="Guaraná Kuat Pet 600ML">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
+        <figure class="card-produto">
+            <p>Coca-Cola Pet Zero 600ML</p><img src="./IMG/products/Coca Cola Zero Pet 600ML.png"
+                alt="Coca-Cola Pet Zero 600ML">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
+        <figure class="card-produto">
+            <p>Fanta Guaraná Lata 350ML</p><img src="./IMG/products/Fanta Guaraná Lata 350ml.png"
+                alt="Fanta Guaraná Lata 350ML">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
+        <figure class="card-produto">
+            <p>Fanta Guaraná Zero Lata 350ML</p><img src="./IMG/products/Fanta Guaraná Zero- Lata 350ml.png"
+                alt="Fanta Guaraná Zero Lata 350ML">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
+        <figure class="card-produto">
+            <p>Powerade Mix de Frutas 500ML</p><img src="./IMG/products/Isotônico Powerade Mix de Frutas- Pet 500ml.png"
+                alt="Powerade Mix de Frutas 500ML">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
+        <figure class="card-produto">
+            <p>Coca-Cola Café Espresso Lata 220ML</p><img src="./IMG/products/Coca Cola Café Espresso- Lata 220ML.png"
+                alt="Coca-Cola Café Espresso Lata 220ML">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
+        <figure class="card-produto">
+            <p>Gin Tônica Schweppes Lata 310ML</p><img src="./IMG/products/Gin Tônica Schweppes- Lata 310ml.png"
+                alt="Schweppes Lata">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
+        <figure class="card-produto">
+            <p>Vodka & Citrus Premium Lata 310ML</p><img
+                src="./IMG/products/Vodka & Citrus Schweppes Premium Drink- Lata 310ml.png" alt="Schweppes Lata">
+            <p class="preco">Preço: R$ 0,00</p>
+        </figure>
     </section>
     <footer id="footer" class="footer">
         <div class="Contato">
@@ -67,4 +139,5 @@
     </footer>
 </body>
 <script src="./script.js"></script>
+
 </html>

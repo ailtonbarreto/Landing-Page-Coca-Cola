@@ -38,6 +38,7 @@ header {
     z-index: 90;
     margin-top: 0;
     height: 10vh;
+    
 
     
     .logo{
@@ -113,7 +114,7 @@ header {
     display: none;
 }
 
-.textohome1{
+.textohome{
     font-size: 14vh;
     position: relative;
     color: var(--cor-principal);
@@ -181,20 +182,6 @@ p{
     cursor: pointer;    
 }
 
-.textohome2{
-    font-size: 14vh;
-    position: relative;
-    color: var(--cor-principal);
-    text-decoration: none;
-    font-weight: 300;
-    display: flex;
-    padding-top: 5%;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 5%;
-    -webkit-text-stroke: 0.1vh var(--cor-bg);
-}
-
 
 .second-section{
     width: 100%;
@@ -240,3 +227,6 @@ p{
     width: 60vh;
 }
 
+.nav-mobile{
+    display: none;
+}
