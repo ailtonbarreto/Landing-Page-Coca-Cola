@@ -21,11 +21,14 @@
     font-family: url('Fonts\LeagueSpartan-Medium.ttf') format('truetype');
 }
 
+
+
 body{
     background-color: var(--cor-bg);
     font-family: 'LeagueSpartan', sans-serif;
     margin: 0;
 }
+
 
 /* HEADER */
 
@@ -198,22 +201,6 @@ p{
 }
 
 
-.contatos-p{
-    font-size: 4vh;
-}
-
-
-.social-media{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-media img{
-    width: 6vh;
-    margin: 4px;
-    cursor: pointer;
-}
 
 .circulo2{
     position: fixed;

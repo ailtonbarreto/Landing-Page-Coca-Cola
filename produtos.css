@@ -1,7 +1,34 @@
+:root{
+    --cor-principal: #DE0B1C;
+    --cor-branco: #ffffff;
+    --cor-bg: #000000;
+    --fonte-tamanho: 2.5vh;
+    --font-tamanho-cards: 100%;
+    --card-color: #313131;
+}
+
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('Fonts\LeagueSpartan-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: url('Fonts\LeagueSpartan-Medium.ttf') format('truetype');
+}
 
 body{
-    background-color: black;
+    background-color: var(--cor-bg);
+    font-family: 'LeagueSpartan', sans-serif;
+    margin: 0;
 }
+
+
+/* HEADER */
 
 header {
     display: flex;
@@ -23,6 +50,7 @@ header {
 
 }
 
+
 .navegation{
     display: flex;
     justify-content: space-between;
@@ -39,6 +67,54 @@ header {
 }
 
 
+.navegation a:hover{
+    color: var(--cor-principal);
+}
+
+
+.cadastro{
+    width: 25vh;
+    font-size: var(--fonte-tamanho);
+    display: flex;
+    justify-content: space-between;
+    gap: 1vh;
+    align-items: center;
+}
+
+.cadastre-se{
+    display: flex;
+    margin: auto;
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-size: var(--fonte-tamanho);
+}
+
+.cadastre-se:hover{
+    color: var(--cor-branco);
+}
+
+.btn-login{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    font-size: var(--fonte-tamanho);
+    width: 10vh;
+    height: 4vh;
+}
+
+.btn-login:hover{
+    background-color : var(--cor-branco);
+    color: var(--cor-principal);
+}
+
+.menu-icon{
+    display: none;
+}
+
 
 .item{
     display: none;
@@ -48,7 +124,6 @@ header {
     top: 0;
     left: 0;
     overflow: hidden;
-    background-color: var(--background);
 }
 
 .item.active{
@@ -64,15 +139,6 @@ header {
     position: absolute;
     left: 50%;
     top: 25%;
-    transform: translate(-50%, -50%);
-}
-
-.item .fruit{
-    width: 140vh;
-    position: relative;
-    top: 50%;
-    z-index: 1;
-    left: 50%;
     transform: translate(-50%, -50%);
 }
 
