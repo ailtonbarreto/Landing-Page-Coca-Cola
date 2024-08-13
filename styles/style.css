@@ -118,7 +118,7 @@ header {
 }
 
 .textohome{
-    font-size: 14vh;
+    font-size: 8vw;
     position: relative;
     color: var(--cor-principal);
     text-decoration: none;
@@ -204,16 +204,62 @@ p{
 
 .circulo2{
     position: fixed;
-    width: 30vh;
+    max-width: 30vw;
     top: 40vh;
-    right: 35vh;
+    right: 20px;
     z-index: -1;
 }
 
 .circulo2 img{
-    width: 60vh;
+    max-width: 30vw;
 }
 
 .nav-mobile{
     display: none;
+}
+
+@media screen and (max-width: 1135px) {
+    header .navegation, .cadastro{
+        display: none;
+    }
+
+    header{
+        justify-content: space-between;
+
+    }
+
+    .menu-icon{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .nav-mobile{
+        display: none;
+        background-color: var(--cor-branco);
+        padding: 1%;
+        text-align: center;
+
+    }
+
+    .nav-mobile li{
+        list-style: none;
+        align-items: center;
+        line-height: 170%;
+        font-weight: bold;
+    }
+
+    .navegation-mobile a{
+        text-decoration: none;
+        color: var(--cor-principal);
+        font-size: var(10pt);
+    }
+
+
+    .textohome{
+        font-size: 8vh;
+    }
+
+    .open{
+        display: block;
+    }
 }
