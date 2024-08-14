@@ -1,35 +1,45 @@
 
-let list = document.querySelectorAll(".item")
+let list = document.querySelectorAll(".itemprod")
 
-let next = document.getElementById("next")
+let next = document.getElementById("next1")
 
-let prev = document.getElementById("prev")
+let prev = document.getElementById("prev1")
 
 //contagem de itens na lista
 let count = list.length //3
 
 
 //item ativo
-let active = 0
+let activeprod = 0
 
 
 //acao botao next
 next.onclick = () => {
-    let activeOld = document.querySelector('.active')
-    activeOld.classList.remove('active')
+    let activeOld1 = document.querySelector('.activeprod')
+    activeOld1.classList.remove('activeprod')
 
-    active = active >= count - 1 ? 0 : active + 1
-    list[active].classList.add('active')
+    activeprod = activeprod >= count - 1 ? 0 : activeprod + 1
+    list[activeprod].classList.add('activeprod')
 }
 
 
 //acao botao prev
 prev.onclick = () => {
-    let activeOld = document.querySelector('.active')
-    activeOld.classList.remove('active')
+    let activeOld1 = document.querySelector('.activeprod')
+    activeOld1.classList.remove('activeprod')
 
-    active = active <= 0 ? count - 1 : active - 1
-    list[active].classList.add('active')
+    activeprod = activeprod <= 0 ? count - 1 : activeprod - 1
+    list[activeprod].classList.add('activeprod')
 }
 
+function menuShowprod(){
+    let menuMobile = document.querySelector('.nav-mobile1');
+    if (menuMobile.classList.contains('openprod')){
+        menuMobile.classList.remove('openprod');
+        document.querySelector('.menu-icon').src ="./IMG/menu-icon.png";
+    } else{
+        menuMobile.classList.add('openprod');
+        document.querySelector('.menu-icon').src ="./IMG/cancel.png";
+    }
+}
 

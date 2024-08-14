@@ -40,18 +40,18 @@ header {
     margin-top: 0;
     height: 10vh;
     
-
-    
-    .logo{
-        max-width: 150px;
-        display: block;
-        align-items: center;
-    }
-
 }
 
 
-.navegation{
+    
+.logoprod{
+    max-width: 150px;
+    display: block;
+    align-items: center;
+}
+
+
+.navegation1{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,15 +60,22 @@ header {
     list-style: none;
 }
 
-.navegation a{
+.navegation1 a{
     text-decoration: none;
     color: var(--cor-branco);
     font-size: var(--fonte-tamanho);
+    pointer-events: auto;
 }
 
 
-.navegation a:hover{
+.navegation1 a:hover{
     color: var(--cor-principal);
+}
+
+
+.nav-mobile1{
+    display: none;
+
 }
 
 
@@ -116,7 +123,7 @@ header {
 }
 
 
-.item{
+.itemprod{
     display: none;
     width: 100%;
     height: 100%;
@@ -126,11 +133,11 @@ header {
     overflow: hidden;
 }
 
-.item.active{
-    display: block;
+.itemprod.activeprod{
+    display: flex;
 }
 
-.item .title{
+.itemprod .titleprod{
     font-size: 5vw;
     color: #fff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -142,7 +149,7 @@ header {
     transform: translate(-50%, -50%);
 }
 
-.item .refri{
+.itemprod .refri{
     z-index: 2;
     max-width: 100vw;
     position: absolute;
@@ -152,7 +159,7 @@ header {
 
 }
 
-#prev, #next{
+#prev1, #next1{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -169,11 +176,11 @@ header {
 
 }
 
-#prev{
+#prev1{
     left: 30px;
 }
 
-#next{
+#next1{
     right: 30px;
 }
 
@@ -184,21 +191,24 @@ header {
     }
 }
 
-.item.active img.fruit{
+.itemprod.activeprod img{
     animation: toActive 0.5s ease-in-out 1;
 }
 
-.item.active .title{
+.itemprod.activeprod .title{
     animation: toActive 0.7s ease-in-out 1;
 }
 
 @media screen and (max-width: 1135px) {
-    header .navegation, .cadastro{
+    header .navegation1, .cadastro{
         display: none;
     }
 
     header{
         justify-content: space-between;
+        max-width: 100vw;
+        margin: 1px;
+        padding: 4vw;
 
     }
 
@@ -207,7 +217,7 @@ header {
         cursor: pointer;
     }
 
-    .nav-mobile{
+    .nav-mobile1{
         display: none;
         background-color: var(--cor-branco);
         padding: 1%;
@@ -215,20 +225,20 @@ header {
 
     }
 
-    .nav-mobile li{
+    .nav-mobile1 li{
         list-style: none;
         align-items: center;
         line-height: 170%;
         font-weight: bold;
     }
 
-    .navegation-mobile a{
+    .navegation-mobile1 a{
         text-decoration: none;
         color: var(--cor-principal);
         font-size: var(10pt);
     }
 
-    .item .title{
+    .itemprod .title{
         font-size: 7vw;
         color: #fff;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -240,8 +250,12 @@ header {
         transform: translate(-50%, -50%);
     }
 
+    .itemprod.activeprod{
+        display: flex;
+        width: 100vw;
+    }
 
-    .open{
+    .openprod{
         display: block;
     }
 
