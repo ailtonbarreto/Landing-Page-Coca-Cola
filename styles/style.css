@@ -36,7 +36,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5vh;
+    padding: 7vh;
     background-color: var(--cor-bg);
     z-index: 90;
     margin-top: 0;
@@ -122,7 +122,7 @@ header {
     text-decoration: none;
     font-weight: 300;
     display: flex;
-    padding-top: 10%;
+    top: 20vh;
     justify-content: center;
     text-align: center;
     margin-bottom: 5%;
@@ -140,7 +140,9 @@ header {
     width: 60vh;
 }
 
-.first-section{
+.section{
+    position: relative;
+    margin-top: 25vh;;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -183,15 +185,6 @@ p{
     cursor: pointer;    
 }
 
-
-.second-section{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
 .footer{
     height: 30vh;
@@ -240,6 +233,8 @@ p{
         display: none;
         background-color: var(--cor-branco);
         padding: 1%;
+        top: 10vh;
+        position: relative;
         text-align: center;
 
     }
@@ -259,7 +254,7 @@ p{
 
 
     .textohome{
-        font-size: 8vh;
+        padding-top: 20%;
     }
 
     .open{
