@@ -26,7 +26,6 @@
 body{
     background-color: var(--cor-bg);
     font-family: 'LeagueSpartan', sans-serif;
-    margin: 0;
 }
 
 
@@ -39,10 +38,10 @@ header {
     padding: 7vh;
     background-color: var(--cor-bg);
     z-index: 90;
-    margin-top: 0;
+    margin-top: -10px;
     height: 10vh;
     position: fixed;
-    width: 100vw;
+    width: 95vw;
 }
 
 .logo{
@@ -116,7 +115,7 @@ header {
 }
 
 .textohome{
-    font-size: 8vw;
+    font-size: 10vw;
     position: relative;
     color: var(--cor-principal);
     text-decoration: none;
@@ -130,15 +129,30 @@ header {
 }
 
 .circulo1{
+    display: flex;
+    left: 10vh;
+    padding: 20vh;
+    border-radius: 50%;
     position: fixed;
+    color: var(--cor-branco);
     top: 60vh;
-    margin-left: -15%;
+    background-color: var(--cor-principal);
     z-index: -1;
 }
 
-.circulo1 img{
-    width: 60vh;
+.circulo2{
+    display: flex;
+    right: -20vh;
+    padding: 15vw;
+    border-radius: 50%;
+    position: fixed;
+    color: var(--cor-branco);
+    top: 50vh;
+    background-color: var(--cor-principal);
+    z-index: -1;
 }
+
+
 
 .section{
     position: relative;
@@ -191,19 +205,6 @@ p{
     z-index: 200;
 }
 
-
-
-.circulo2{
-    position: fixed;
-    max-width: 30vw;
-    top: 40vh;
-    right: 20px;
-    z-index: -1;
-}
-
-.circulo2 img{
-    max-width: 30vw;
-}
 
 .nav-mobile{
     display: none;

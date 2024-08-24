@@ -247,7 +247,7 @@ header {
     .itemprod.activeprod{
         top: 1vh;
         display: flex;
-        width:100vw;
+        width:95vw;
         position: relative;
     }
 
