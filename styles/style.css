@@ -15,7 +15,7 @@
 }
 
 *{
-    margin: o;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: url('Fonts\LeagueSpartan-Medium.ttf') format('truetype');
@@ -26,6 +26,7 @@
 body{
     background-color: var(--cor-bg);
     font-family: 'LeagueSpartan', sans-serif;
+    margin: 0;
 }
 
 
@@ -46,7 +47,7 @@ header {
 
 .logo{
     width: 80%;
-    display: block;
+    display: flex;
     align-items: center;
 }
 
@@ -215,14 +216,24 @@ p{
         display: none;
     }
 
-
-
     header{
+        display: flex;
         justify-content: space-between;
-        max-width: 100vw;
+        align-items: center;
         padding: 3vh;
-        position: absolute;
-
+        background-color: var(--cor-bg);
+        z-index: 100;
+        margin-top: -10px;
+        padding-top: 50px;
+        height: 10vh;
+        position: fixed;
+        width: 100vw;
+    }
+    
+    .logo{
+        width: 70%;
+        padding-bottom: 2vh;
+        display: block;
     }
 
     .menu-icon{
@@ -234,8 +245,8 @@ p{
         display: none;
         background-color: var(--cor-branco);
         padding: 1%;
-        top: 10vh;
         position: relative;
+        top: 15vh;
         text-align: center;
 
     }
