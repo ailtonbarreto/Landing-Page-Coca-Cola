@@ -1,0 +1,108 @@
+
+:root{
+    --cor-principal: #DE0B1C;
+    --cor-branco: #ffffff;
+    --cor-bg: #000000;
+    --fonte-tamanho: 2.5vh;
+    --font-tamanho-cards: 100%;
+    --card-color: #313131;
+}
+
+
+
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('Fonts\LeagueSpartan-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: url('Fonts\LeagueSpartan-Medium.ttf') format('truetype');
+ 
+}
+
+body{
+    background-color: var(--cor-bg);
+    font-family: 'LeagueSpartan', sans-serif;
+    margin: 0;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 7vh;
+}
+
+img{
+    min-width: 10%;
+}
+
+.navegation1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15vh;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.navegation1 a{
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-size: var(--fonte-tamanho);
+}
+
+
+.navegation1 a:hover{
+    color: var(--cor-principal);
+}
+
+
+.nav-mobile1{
+    display: none;
+
+}
+
+
+.login-form{
+    display: flex;
+    text-align: center;
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+    top: 20vh;
+    position: relative;
+    padding: 4vw;
+    border-radius: 8px;
+    background-color: var(--card-color);
+    color: var(--cor-branco);
+}
+
+.login-form label{
+    color: var(--cor-principal);
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.login-form .btn-enviar{
+    color: var(--cor-branco);
+    background-color: var(--cor-principal);
+    justify-content: center;
+    width: 50%;
+
+}
+
+.login-form input{
+    outline: none;
+    height: 3vh;
+    border-radius: 3px;
+    border: none;
+}

@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-be">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/login.css">
     <title>Login</title>
 </head>
+
 <body>
-    
-</body>
+
+    <body>
+
+        <div class="nav-mobile1">
+            <ul class="navegation-mobile1">
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Campanhas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="img">
+            <img  src="./IMG/logo.png" alt="">
+        </div>
+        
+        <main class="login-form">
+            
+            <form method="GET" action="#">
+                <label for="email">Email:</label><br>
+                <input type="email" class="email" name="email" required><br><br>
+              
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" name="senha" required><br><br>
+              
+                <input class="btn-enviar" type="submit" onclick="Capturar()" value="Entrar">
+              </form>
+              
+              
+        </main>
+
+        <script src="./script-login.js"></script>
+    </body>
+
 </html>
