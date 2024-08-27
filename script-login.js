@@ -1,5 +1,6 @@
 
 function Capturar() {
+  
     let email = document.querySelector('#email').value;
     let senha = document.querySelector('#senha').value;
   
