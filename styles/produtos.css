@@ -157,7 +157,16 @@ header {
 
 }
 
-
+.descricao{
+    color: var(--cor-branco);
+    font-size: var(--font-tamanho-cards);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    bottom: -40vh;
+}
 
 #prev1, #next1{
     position: absolute;
