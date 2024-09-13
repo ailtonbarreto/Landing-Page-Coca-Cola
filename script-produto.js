@@ -5,15 +5,15 @@ let next = document.getElementById("next1")
 
 let prev = document.getElementById("prev1")
 
-//contagem de itens na lista
-let count = list.length //3
+
+let count = list.length 
 
 
-//item ativo
+
 let activeprod = 0
 
 
-//acao botao next
+
 next.onclick = () => {
     let activeOld1 = document.querySelector('.activeprod')
     activeOld1.classList.remove('activeprod')
@@ -23,7 +23,7 @@ next.onclick = () => {
 }
 
 
-//acao botao prev
+
 prev.onclick = () => {
     let activeOld1 = document.querySelector('.activeprod')
     activeOld1.classList.remove('activeprod')

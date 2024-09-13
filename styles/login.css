@@ -70,7 +70,7 @@ img{
 }
 
 
-.login-form{
+#loginForm{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -86,7 +86,7 @@ img{
     color: var(--cor-branco);
 }
 
-.login-form label{
+#loginForm label{
     color: var(--cor-principal);
     display: flex;
     align-items: center;
@@ -94,7 +94,7 @@ img{
     font-weight: bold;
 }
 
-.login-form .btn-enviar{
+#loginForm button{
     color: var(--cor-branco);
     background-color: var(--cor-principal);
     justify-content: center;
@@ -105,7 +105,7 @@ img{
 
 }
 
-.login-form input{
+#loginForm input{
     outline: none;
     height: 3vh;
     border-radius: 3px;
@@ -114,6 +114,6 @@ img{
     
 }
 
-.btn-enviar :active {
+#loginForm button :active {
     background-color: var(--card-color);
 }
